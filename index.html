@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Art InGene — Your one-stop hub for curated tools across projects, learning, development, creativity and more." />
+  <title>Art InGene | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar__logo">
+      <img src="images/web_logo.png" alt="Art InGene" />
+    </a>
+    <div class="navbar__nav" id="mainNav">
+      <a href="about.html" class="navbar__link">About</a>
+      <a href="fellow_devs.html" class="navbar__link">Team</a>
+      <a href="#categories" class="btn btn--ghost" style="margin-left:0.5rem;">Explore Tools</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg-glow"></div>
+      <div class="hero__badge">✦ Your All-in-One Toolkit</div>
+      <h1 class="hero__title">
+        Every Tool You Need,<br/>
+        <span>One Place.</span>
+      </h1>
+      <p class="hero__sub">
+        Art InGene brings you a curated collection of the best online tools for learning, development, creativity, resume building, and more — no more tab hunting.
+      </p>
+      <div class="hero__actions">
+        <a href="#categories" class="btn btn--solid">Browse Categories</a>
+        <a href="about.html" class="btn btn--ghost">Learn More</a>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__label">Explore</p>
+          <h2 class="section__title">Choose Your <span>Genre</span></h2>
+        </div>
+
+        <div class="card-grid">
+
+          <a href="projects.html" class="cat-card">
+            <img class="cat-card__icon" src="images/project.png" alt="Project Tools" />
+            <span class="cat-card__name">Project Tools</span>
+            <span class="cat-card__desc">College & personal project helpers</span>
+          </a>
+
+          <a href="resume.html" class="cat-card">
+            <img class="cat-card__icon" src="images/resumee.png" alt="Resume Tools" />
+            <span class="cat-card__name">Resume Tools</span>
+            <span class="cat-card__desc">Build and polish your resume</span>
+          </a>
+
+          <a href="learn.html" class="cat-card">
+            <img class="cat-card__icon" src="images/learning.png" alt="Learning Tools" />
+            <span class="cat-card__name">Learning Tools</span>
+            <span class="cat-card__desc">AI/ML, Data Science, hacking & more</span>
+          </a>
+
+          <a href="development.html" class="cat-card">
+            <img class="cat-card__icon" src="images/develop.png" alt="Developer Tools" />
+            <span class="cat-card__name">Developer's Tools</span>
+            <span class="cat-card__desc">Web dev, AR/VR & app building</span>
+          </a>
+
+          <a href="creator.html" class="cat-card">
+            <img class="cat-card__icon" src="images/creativity.png" alt="Creator Tools" />
+            <span class="cat-card__name">Creator's Tools</span>
+            <span class="cat-card__desc">Music, video, audio & visual creation</span>
+          </a>
+
+          <a href="editor_tools.html" class="cat-card">
+            <img class="cat-card__icon" src="images/editing.png" alt="Editing Tools" />
+            <span class="cat-card__name">Editing Tools</span>
+            <span class="cat-card__desc">PDF, image & video editing</span>
+          </a>
+
+          <div class="cat-card cat-card--soon">
+            <span class="soon-badge">Coming Soon</span>
+            <img class="cat-card__icon" src="images/coder_soon.png" alt="Coder's Section" />
+            <span class="cat-card__name">Coder's Section</span>
+            <span class="cat-card__desc">Snippets, compilers & references</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <span class="footer__brand">Art InGene</span>
+        <span class="footer__copy">© 2022–2024 Art InGene. All rights reserved.</span>
+      </div>
+      <nav class="footer__links">
+        <a href="about.html" class="footer__link">About</a>
+        <a href="fellow_devs.html" class="footer__link">Team</a>
+        <a href="#" class="footer__link">Terms</a>
+        <a href="#" class="footer__link">Contact</a>
+        <a href="#" class="footer__link" style="color:#00e5ff;">Contribute</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('mainNav');
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('is-open');
+    });
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>

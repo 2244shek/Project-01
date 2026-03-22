@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Art InGene Resume Tools — vocabulary modifiers, resume builders, and more." />
+  <title>Art InGene | Resume Tools</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar__logo">
+      <img src="images/web_logo.png" alt="Art InGene" />
+    </a>
+    <div class="navbar__nav" id="mainNav">
+      <a href="index.html" class="navbar__link">Home</a>
+      <a href="about.html" class="navbar__link">About</a>
+      <a href="fellow_devs.html" class="navbar__link">Team</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <div class="page-hero">
+      <a href="index.html" class="page-hero__back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        Back to Home
+      </a>
+      <p class="page-hero__label">Career Ready</p>
+      <h1 class="page-hero__title">Resume Tools</h1>
+      <p class="page-hero__sub">Polish your vocabulary, build a beautiful resume, and land that opportunity.</p>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="tool-grid">
+
+          <div class="tool-card">
+            <div class="tool-card__title">Wordtune</div>
+            <p class="tool-card__desc">AI-powered writing assistant that rewrites your sentences to be clearer, more engaging, and professional. Perfect for resume bullet points.</p>
+            <a href="https://www.wordtune.com/" target="_blank" rel="noopener" class="tool-card__link">
+              Open wordtune.com
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="tool-card">
+            <div class="tool-card__title">Resume.io</div>
+            <p class="tool-card__desc">Build a professional, ATS-friendly resume in minutes using beautiful templates. Export as PDF instantly — no design skills needed.</p>
+            <a href="https://resume.io/" target="_blank" rel="noopener" class="tool-card__link">
+              Open resume.io
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <span class="footer__brand">Art InGene</span>
+        <span class="footer__copy">© 2022–2024 Art InGene. All rights reserved.</span>
+      </div>
+      <nav class="footer__links">
+        <a href="about.html" class="footer__link">About</a>
+        <a href="fellow_devs.html" class="footer__link">Team</a>
+        <a href="#" class="footer__link">Terms</a>
+        <a href="#" class="footer__link">Contact</a>
+        <a href="#" class="footer__link" style="color:#00e5ff;">Contribute</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('mainNav');
+    hamburger.addEventListener('click', () => nav.classList.toggle('is-open'));
+  </script>
+</body>
+</html>

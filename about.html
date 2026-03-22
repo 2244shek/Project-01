@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Art InGene — the story behind the tools aggregator built by Abhishek Panigrahi." />
+  <title>Art InGene | About Us</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar__logo">
+      <img src="images/web_logo.png" alt="Art InGene" />
+    </a>
+    <div class="navbar__nav" id="mainNav">
+      <a href="index.html" class="navbar__link">Home</a>
+      <a href="fellow_devs.html" class="navbar__link">Team</a>
+      <a href="index.html#categories" class="btn btn--ghost" style="margin-left:0.5rem;">Explore Tools</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <a href="index.html" class="page-hero__back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        Back to Home
+      </a>
+      <p class="page-hero__label">Our Story</p>
+      <h1 class="page-hero__title">About Art InGene</h1>
+      <p class="page-hero__sub">A one-stop hub for every tool you need, born from a student's weekend project.</p>
+    </div>
+
+    <!-- CONTENT -->
+    <section class="section">
+      <div class="container">
+        <div class="about-content">
+
+          <p class="about-lead">
+            Art InGene is a curated collection of the best free online tools for learning, development, creativity, resume building, and daily tasks — built so you never have to hunt across a dozen tabs again. 💝
+          </p>
+
+          <div class="section__header" style="text-align:left; margin-bottom:2rem;">
+            <p class="section__label">Timeline</p>
+            <h2 class="section__title">The Journey 🎭</h2>
+          </div>
+
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-item__dot">1</div>
+              <div class="timeline-item__body">
+                <p class="timeline-item__date">18 February 2022</p>
+                <h3 class="timeline-item__title">The Spark</h3>
+                <p class="timeline-item__text">
+                  On a fine evening, the idea of building a single website to house all the best free tools was born. After learning web development from YouTube, I felt motivated to build my very first self-employed project. The first step was designing the site's wireframe in Whimsical, followed by coding out the landing page in HTML.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-item__dot">2</div>
+              <div class="timeline-item__body">
+                <p class="timeline-item__date">1 March 2022</p>
+                <h3 class="timeline-item__title">Styling with TailwindCSS</h3>
+                <p class="timeline-item__text">
+                  Once the HTML structure was in place, I discovered TailwindCSS — a utility-first CSS framework that made styling significantly faster. I completed the Tailwind tutorial in two weeks and began applying it across the project. The goal was simple: finish the project, boost confidence, and stay consistent.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-item__dot">3</div>
+              <div class="timeline-item__body">
+                <p class="timeline-item__date">7 March 2022</p>
+                <h3 class="timeline-item__title">The Classic Struggle ☠️</h3>
+                <p class="timeline-item__text">
+                  Like most beginners, I ran into the inevitable "break in consistency." Life, studies, and other commitments created gaps — but the project was never abandoned. Every setback taught a lesson about persistence and the long game of improving as a developer.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-item__dot">4</div>
+              <div class="timeline-item__body">
+                <p class="timeline-item__date">2024 — Redesign</p>
+                <h3 class="timeline-item__title">A Fresh Look</h3>
+                <p class="timeline-item__text">
+                  Years later, the site gets a complete design overhaul — dark mode, responsive layout, unified component system, and a cleaner structure. The tools remain, the mission stays the same, and the journey continues.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="margin-top:2.5rem; padding:1.5rem; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); text-align:center;">
+            <p style="color:var(--text-secondary); font-size:0.9rem; margin-bottom:1rem;">
+              Want to see who built this? Meet the developer behind Art InGene.
+            </p>
+            <a href="fellow_devs.html" class="btn btn--solid">Meet the Developer →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <span class="footer__brand">Art InGene</span>
+        <span class="footer__copy">© 2022–2024 Art InGene. All rights reserved.</span>
+      </div>
+      <nav class="footer__links">
+        <a href="about.html" class="footer__link">About</a>
+        <a href="fellow_devs.html" class="footer__link">Team</a>
+        <a href="#" class="footer__link">Terms</a>
+        <a href="#" class="footer__link">Contact</a>
+        <a href="#" class="footer__link" style="color:#00e5ff;">Contribute</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('mainNav');
+    hamburger.addEventListener('click', () => nav.classList.toggle('is-open'));
+  </script>
+</body>
+</html>
